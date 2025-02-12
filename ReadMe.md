@@ -34,11 +34,13 @@ org.oss.processor.DataProcessor#processData
 
 
 ## File Structure 文件结构
+```bash
 src/
 ├── main/
-│ ├── java/org/oss/
-│ │ ├── processor/ # 业务处理核心模块
-│ │ ├── config/ # 数据源配置
-│ │ └── SpringBootSimpleUtilApplication.java # 启动类
-│ └── resources/
-│ └── application.properties # 配置文件
+│   ├── java/org/oss/
+│   │   ├── processor/       # 业务处理核心模块
+│   │   ├── config/          # 数据源配置
+│   │   └── SpringBootSimpleUtilApplication.java  # 启动类
+│   └── resources/
+│       └── application.properties  # 配置文件
+```
