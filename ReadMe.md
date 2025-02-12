@@ -3,49 +3,47 @@
   <a href="./README_zh.md">简体中文</a>
 </div>
 
-# Data Processor Utility 多数据源数据处理工具
+# Multi-Data Source Data Processing Tool
 
+## Features
+- Support for multiple database configurations (source/target)
+- Generate result files
 
-
-## Features 功能特性
-- 支持多数据库配置（源库/目标库）
-- 生成结果文件
-
-## Prerequisites 环境要求
+## Environment Requirements
 - JDK 8+
 - Maven 3.2+
 - MySQL 5.6+
 
-## Quick Start 快速开始
-### 1. 配置数据库
+## Quick Start
+### 1. Configure the Database
 application.properties
 
-源数据库配置
+Source Database Configuration
 source.datasource.url=jdbc:mysql://localhost:3306/source_db
 source.datasource.username=root
 source.datasource.password=123456
 
-目标数据库配置
+Target Database Configuration
 target.datasource.url=jdbc:mysql://localhost:3306/target_db
 target.datasource.username=root
 target.datasource.password=123456
 
-### 2. 配置运行参数
-编写数据处理逻辑
+### 2. Configure the Running Parameters
+Write the data processing logic
 org.oss.processor.DataProcessor#processData
 
-### 3. 启动应用
+### 3. Start the Application
 
 
 
-## File Structure 文件结构
+## File Structure
 ```bash
 src/
 ├── main/
 │   ├── java/org/oss/
-│   │   ├── processor/       # 业务处理核心模块
-│   │   ├── config/          # 数据源配置
-│   │   └── SpringBootSimpleUtilApplication.java  # 启动类
+│   │   ├── processor/       # Business processing core module
+│   │   ├── config/          # Data source configuration
+│   │   └── SpringBootSimpleUtilApplication.java  # Startup class
 │   └── resources/
-│       └── application.properties  # 配置文件
+│       └── application.properties  # Configuration file
 ```
